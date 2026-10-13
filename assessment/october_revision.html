@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مراجعة شهر أكتوبر - الصف الثالث الإعدادي | Prep 3 October Revision</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Outfit:wght@400;600;700;800&family=Fira+Code:wght@500;600&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX for beautiful math formulas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-primary: #0b1120;
+            --bg-secondary: #131d31;
+            --bg-card: rgba(22, 32, 54, 0.85);
+            --bg-card-hover: rgba(30, 44, 74, 0.95);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-accent: rgba(56, 189, 248, 0.3);
+            
+            --primary: #38bdf8;
+            --primary-glow: rgba(56, 189, 248, 0.25);
+            --accent-green: #10b981;
+            --accent-green-bg: rgba(16, 185, 129, 0.12);
+            --accent-gold: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-red: #ef4444;
+            --accent-red-bg: rgba(239, 68, 68, 0.12);
+            
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+            --shadow-glow: 0 0 25px rgba(56, 189, 248, 0.15);
+            
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+            
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            min-height: 100vh;
+            line-height: 1.7;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.08) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.08) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px 16px 80px;
+        }
+
+        /* Top Bar & Teacher Header */
+        .header-card {
+            background: linear-gradient(135deg, rgba(19, 29, 49, 0.95), rgba(15, 23, 42, 0.95));
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            box-shadow: var(--shadow-md), var(--shadow-glow);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 28px;
+            backdrop-filter: blur(12px);
+        }
+
+        .header-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #38bdf8, #8b5cf6, #10b981, #f59e0b);
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .badge-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: rgba(56, 189, 248, 0.12);
+            color: var(--primary);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: var(--radius-full);
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        .badge-tag.gold {
+            background: rgba(245, 158, 11, 0.12);
+            color: var(--accent-gold);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .badge-tag.green {
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--accent-green);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .teacher-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .teacher-info strong {
+            color: #f8fafc;
+            font-weight: 800;
+        }
+
+        .header-title {
+            font-size: 2.1rem;
+            font-weight: 900;
+            line-height: 1.3;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #ffffff 30%, #93c5fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 850px;
+        }
+
+        /* Action Buttons */
+        .header-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: var(--radius-md);
+            font-size: 0.95rem;
+            font-weight: 700;
+            font-family: inherit;
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #38bdf8, #2563eb);
+            color: white;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-main);
+            border-color: var(--border-color);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #0f172a;
+            font-weight: 800;
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+        }
+
+        /* Stats Strip */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .stat-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .stat-icon.cyan { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+        .stat-icon.purple { background: rgba(139, 92, 246, 0.15); color: #8b5cf6; }
+        .stat-icon.gold { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+        .stat-icon.green { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+
+        .stat-meta .stat-val {
+            font-size: 1.45rem;
+            font-weight: 800;
+            line-height: 1.2;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .stat-meta .stat-lbl {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        /* Navigation & Filter Bar */
+        .controls-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .controls-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .tab-group {
+            display: flex;
+            gap: 6px;
+            background: rgba(11, 17, 32, 0.6);
+            padding: 5px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 8px 16px;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 0.92rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-main);
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: #0b1120;
+            box-shadow: 0 2px 10px rgba(56, 189, 248, 0.3);
+        }
+
+        .lesson-pills {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .pill-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            font-family: inherit;
+            font-size: 0.84rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .pill-btn:hover {
+            border-color: var(--primary);
+            color: var(--text-main);
+        }
+
+        .pill-btn.active {
+            background: rgba(56, 189, 248, 0.15);
+            border-color: var(--primary);
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        /* Section Separator */
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin: 36px 0 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.15rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #f8fafc;
+        }
+
+        .section-count {
+            margin-right: auto;
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-muted);
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        /* Question Cards */
+        .questions-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .q-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            backdrop-filter: blur(8px);
+            position: relative;
+        }
+
+        .q-card:hover {
+            border-color: var(--border-accent);
+            background: var(--bg-card-hover);
+        }
+
+        .q-card.converted-from-complete {
+            border-right: 4px solid var(--accent-gold);
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .q-meta-tags {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .q-num-badge {
+            background: linear-gradient(135deg, #38bdf8, #2563eb);
+            color: white;
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.05rem;
+        }
+
+        .q-source-tag {
+            font-size: 0.78rem;
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+        }
+
+        .q-source-tag.school {
+            background: rgba(56, 189, 248, 0.12);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.25);
+        }
+
+        .q-source-tag.assessment {
+            background: rgba(139, 92, 246, 0.12);
+            color: #c084fc;
+            border: 1px solid rgba(139, 92, 246, 0.25);
+        }
+
+        .q-source-tag.converted {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fbbf24;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .q-lesson-tag {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            font-weight: 600;
+        }
+
+        .q-body {
+            font-size: 1.18rem;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            direction: rtl;
+        }
+
+        .q-body.ltr-math {
+            direction: ltr;
+            text-align: left;
+        }
+
+        /* MCQ Options Grid */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 680px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .opt-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: right;
+            direction: rtl;
+            color: #e2e8f0;
+            font-family: inherit;
+            font-size: 1.05rem;
+        }
+
+        .opt-btn:hover:not(.disabled) {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: var(--primary);
+        }
+
+        .opt-letter {
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .opt-btn.selected-correct {
+            background: var(--accent-green-bg);
+            border-color: var(--accent-green);
+            color: #34d399;
+        }
+
+        .opt-btn.selected-correct .opt-letter {
+            background: var(--accent-green);
+            color: #0b1120;
+        }
+
+        .opt-btn.selected-wrong {
+            background: var(--accent-red-bg);
+            border-color: var(--accent-red);
+            color: #f87171;
+        }
+
+        .opt-btn.selected-wrong .opt-letter {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .opt-btn.highlight-correct {
+            border-color: var(--accent-green);
+            background: rgba(16, 185, 129, 0.06);
+        }
+
+        /* Solution Accordion */
+        .solution-box {
+            margin-top: 14px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(11, 17, 32, 0.7);
+        }
+
+        .solution-toggle-btn {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.02);
+            border: none;
+            color: var(--primary);
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: inherit;
+            font-size: 0.92rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .solution-toggle-btn:hover {
+            background: rgba(56, 189, 248, 0.08);
+        }
+
+        .solution-content {
+            padding: 16px 20px;
+            display: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            color: #cbd5e1;
+            font-size: 1.02rem;
+            line-height: 1.85;
+            background: rgba(15, 23, 42, 0.6);
+        }
+
+        .solution-content.open {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .step-pill {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--primary);
+            padding: 2px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .final-answer-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+
+        /* Graph Canvas & SVG Styling */
+        .graph-preview-container {
+            margin: 16px 0;
+            background: #0f172a;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .graph-svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Print / Booklet Styles */
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .header-actions, .controls-card, .stats-grid, .btn, .solution-toggle-btn {
+                display: none !important;
+            }
+            .solution-content {
+                display: block !important;
+                background: #f8fafc !important;
+                color: #0f172a !important;
+                border: 1px solid #e2e8f0 !important;
+            }
+            .q-card {
+                background: white !important;
+                color: black !important;
+                border: 1px solid #ccc !important;
+                page-break-inside: avoid;
+                margin-bottom: 20px !important;
+                box-shadow: none !important;
+            }
+            .opt-btn {
+                background: #f8fafc !important;
+                border: 1px solid #ddd !important;
+                color: black !important;
+            }
+            .opt-btn.highlight-correct {
+                font-weight: bold;
+                border-color: black !important;
+            }
+            .header-card {
+                background: white !important;
+                border: 2px solid black !important;
+                box-shadow: none !important;
+                color: black !important;
+            }
+            .header-title {
+                -webkit-text-fill-color: black !important;
+                color: black !important;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Isolated Mode: Hides any links to other parts/tabs of the platform */
+        body.isolated-mode .external-platform-link {
+            display: none !important;
+        }
+        body.no-tabs-mode .controls-card {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Card -->
+    <header class="header-card">
+        <div class="header-top">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="badge-tag"><i class="fa-solid fa-graduation-cap"></i> الصف الثالث الإعدادي (Prep 3)</span>
+                <span class="badge-tag gold"><i class="fa-solid fa-star"></i> مراجعة شهر أكتوبر 2026</span>
+                <span class="badge-tag green"><i class="fa-solid fa-book-bookmark"></i> كتاب المدرسة + كتاب التقييمات</span>
+            </div>
+            <div class="teacher-info">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>إعداد: <strong>مستر أحمد عبد المتعال</strong></span>
+            </div>
+        </div>
+
+        <h1 class="header-title">بنك أسئلة مراجعة شهر أكتوبر الشاملة (48 سؤالاً)</h1>
+        <p class="header-subtitle">
+            تجميع شامل ودقيق لكافة تمارين مراجعة أكتوبر من <strong>كتاب المدرسة</strong> و<strong>كتاب الأداءات والتقييمات الأسبوعية</strong> مرتبة ومبوبة حسب تسلسل الدروس، تبدأ بأسئلة الاختيار من متعدد تليها الأسئلة المقالية، مع تحويل جميع أسئلة "أكمل" إلى "اختر" وفقاً للتعليمات.
+        </p>
+
+        <div class="header-actions">
+            <a href="../index.html" class="btn btn-outline external-platform-link" title="الانتقال إلى الدروس التفاعلية">
+                <i class="fa-solid fa-shapes"></i> الدروس التفاعلية
+            </a>
+            <a href="index.html" class="btn btn-outline external-platform-link" title="الانتقال إلى التقييمات الأسبوعية">
+                <i class="fa-solid fa-clipboard-check"></i> التقييمات الأسبوعية
+            </a>
+            <button class="btn btn-primary" onclick="expandAllSolutions()">
+                <i class="fa-solid fa-eye"></i> فتح كافة الحلول النموذجية
+            </button>
+            <button class="btn btn-outline" onclick="collapseAllSolutions()">
+                <i class="fa-solid fa-eye-slash"></i> إخفاء كافة الحلول
+            </button>
+            <button class="btn btn-gold" onclick="window.print()">
+                <i class="fa-solid fa-print"></i> طباعة المراجعة / PDF
+            </button>
+            <button class="btn btn-outline" id="btnCopyIsolatedLink" onclick="copyIsolatedLink()" title="نسخ رابط المراجعة المنفصل لمشاركته مع الطلاب">
+                <i class="fa-solid fa-share-nodes"></i> <span>نسخ الرابط المنفصل</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Stats Grid -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon cyan"><i class="fa-solid fa-list-ol"></i></div>
+            <div class="stat-meta">
+                <div class="stat-val">48</div>
+                <div class="stat-lbl">إجمالي الأسئلة</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon purple"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="stat-meta">
+                <div class="stat-val">18</div>
+                <div class="stat-lbl">اختيار من متعدد (MCQ)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon gold"><i class="fa-solid fa-pen-ruler"></i></div>
+            <div class="stat-meta">
+                <div class="stat-val">30</div>
+                <div class="stat-lbl">أسئلة مقالية ومسائل</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon green"><i class="fa-solid fa-book-open"></i></div>
+            <div class="stat-meta">
+                <div class="stat-val">5</div>
+                <div class="stat-lbl">دروس مفرزة ومحققة 100%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls & Filter Card -->
+    <div class="controls-card">
+        <div class="controls-row">
+            <!-- Mode Tabs -->
+            <div class="tab-group" id="modeTabs">
+                <button class="tab-btn active" data-mode="all" onclick="setMode('all')">
+                    <i class="fa-solid fa-layer-group"></i> عرض شامل (متعدد أولاً ثم مقالي)
+                </button>
+                <button class="tab-btn" data-mode="mcq" onclick="setMode('mcq')">
+                    <i class="fa-solid fa-circle-dot"></i> الاختيار من متعدد فقط (18)
+                </button>
+                <button class="tab-btn" data-mode="essay" onclick="setMode('essay')">
+                    <i class="fa-solid fa-file-lines"></i> الأسئلة المقالية فقط (30)
+                </button>
+            </div>
+
+            <!-- Score / Progress -->
+            <div id="mcqProgressBadge" style="font-size: 0.95rem; font-weight: 700; color: var(--text-muted);">
+                <i class="fa-solid fa-square-check" style="color: var(--accent-green);"></i> التفاعل: <span id="solvedCount">0</span> / 18
+            </div>
+        </div>
+
+        <!-- Lesson Filter Pills -->
+        <div class="lesson-pills" id="lessonPills">
+            <button class="pill-btn active" data-lesson="all" onclick="setLesson('all')">جميع الدروس (5)</button>
+            <button class="pill-btn" data-lesson="1" onclick="setLesson('1')">الدرس 1: قوانين الأسس</button>
+            <button class="pill-btn" data-lesson="2" onclick="setLesson('2')">الدرس 2: المعادلات الأسية</button>
+            <button class="pill-btn" data-lesson="3" onclick="setLesson('3')">الدرس 3: الدالة التربيعية</button>
+            <button class="pill-btn" data-lesson="4" onclick="setLesson('4')">الدرس 4: أصفار الدوال</button>
+            <button class="pill-btn" data-lesson="5" onclick="setLesson('5')">الدرس 5: الكسور الجبرية</button>
+        </div>
+    </div>
+
+    <!-- MAIN QUESTIONS CONTAINER -->
+    <main id="questionsContainer">
+        <!-- Will be dynamically populated via JS -->
+    </main>
+</div>
+
+<script>
+// Complete Data for All 48 Questions
+const REVISION_DATA = {
+    mcq: [
+        // LESSON 1: Laws of Exponents
+        {
+            id: "mcq-1",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب المدرسة (School Book) - ص 1",
+            converted: false,
+            questionText: "أي مما يأتي يساوي $(a^2)^4 \\times a^5$ ؟",
+            options: [
+                { letter: "أ", text: "$a^{11}$", correct: false },
+                { letter: "ب", text: "$a^{13}$", correct: true },
+                { letter: "ج", text: "$a^{40}$", correct: false },
+                { letter: "د", text: "$a^{30}$", correct: false }
+            ],
+            solution: "بتطبيق قوانين الأسس:<br>1) قوة القوة: $(a^2)^4 = a^{2 \\times 4} = a^8$.<br>2) ضرب الأساسات المتشابهة تجمع الأسس: $a^8 \\times a^5 = a^{8 + 5} = a^{13}$.",
+            correctAnswer: "ب"
+        },
+        {
+            id: "mcq-2",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب التقييمات (Assessments) - ص 16",
+            converted: false,
+            questionText: "The value of $(x^2 y^3)^2$ when $x = 1, y = 2$ is equal to ........<br>(ما قيمة المقدار $(x^2 y^3)^2$ عندما $x = 1, y = 2$ ؟)",
+            options: [
+                { letter: "أ", text: "$8$", correct: false },
+                { letter: "ب", text: "$16$", correct: false },
+                { letter: "ج", text: "$32$", correct: false },
+                { letter: "د", text: "$64$", correct: true }
+            ],
+            solution: "بتوزيع الأس على الضرب:<br>$(x^2 y^3)^2 = x^{2 \\times 2} \\cdot y^{3 \\times 2} = x^4 y^6$.<br>بالتعويض عن $x = 1, y = 2$:<br>$(1)^4 \\times (2)^6 = 1 \\times 64 = 64$.",
+            correctAnswer: "د"
+        },
+        {
+            id: "mcq-3",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب المدرسة (School Book) - ص 1",
+            converted: false,
+            questionText: "إذا كان : $b = 3^{x+1}$ فأي مما يأتي يساوي $9^{x+1}$ ؟",
+            options: [
+                { letter: "أ", text: "$27 b^2$", correct: false },
+                { letter: "ب", text: "$3 b^2$", correct: false },
+                { letter: "ج", text: "$9 b^2$", correct: false },
+                { letter: "د", text: "$b^2$", correct: true }
+            ],
+            solution: "بما أن $9 = 3^2$:<br>$9^{x+1} = (3^2)^{x+1} = (3^{x+1})^2$.<br>وحيث إن $3^{x+1} = b$، إذن المقدار يساوي $b^2$.<br><em>ملاحظة إضافية: إذا كانت المسألة $b = 3^x$ فإن $9^{x+1} = 9 \\cdot 9^x = 9 b^2$.</em>",
+            correctAnswer: "د"
+        },
+        {
+            id: "mcq-4",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب المدرسة (School Book) - ص 1 (محول من أكمل)",
+            converted: true,
+            questionText: "ناتج المقدار $\\frac{(-2a^2)^3}{2a}$ في أبسط صورة هو :",
+            options: [
+                { letter: "أ", text: "$-4 a^5$", correct: true },
+                { letter: "ب", text: "$4 a^5$", correct: false },
+                { letter: "ج", text: "$-4 a^6$", correct: false },
+                { letter: "د", text: "$-8 a^5$", correct: false }
+            ],
+            solution: "البسط: $(-2a^2)^3 = (-2)^3 \\cdot (a^2)^3 = -8 a^6$.<br>بقسمة البسط على المقام:<br>$\\frac{-8 a^6}{2 a} = -4 a^{6 - 1} = -4 a^5$.",
+            correctAnswer: "أ"
+        },
+
+        // LESSON 2: Exponential Equations
+        {
+            id: "mcq-5",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب المدرسة (School Book) - ص 1",
+            converted: false,
+            questionText: "إذا كان : $\\frac{3^x \\times 27^x}{81^x} = 2^{-2x}$ فما قيمة $x$ ؟",
+            options: [
+                { letter: "أ", text: "$0$", correct: true },
+                { letter: "ب", text: "$1$", correct: false },
+                { letter: "ج", text: "$2$", correct: false },
+                { letter: "د", text: "$-1$", correct: false }
+            ],
+            solution: "تبسيط الطرف الأيمن بالأساس 3:<br>$27^x = (3^3)^x = 3^{3x}$ ، $81^x = (3^4)^x = 3^{4x}$.<br>الطرف الأيمن $= \\frac{3^x \\times 3^{3x}}{3^{4x}} = \\frac{3^{4x}}{3^{4x}} = 1$.<br>إذن: $2^{-2x} = 1 = 2^0 \\implies -2x = 0 \\implies x = 0$.",
+            correctAnswer: "أ"
+        },
+        {
+            id: "mcq-6",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب المدرسة (School Book) - ص 1",
+            converted: false,
+            questionText: "إذا كان : $4^{-x} = 8$ فما قيمة $x$ ؟",
+            options: [
+                { letter: "أ", text: "$1$", correct: false },
+                { letter: "ب", text: "$2$", correct: false },
+                { letter: "ج", text: "$-\\frac{2}{3}$", correct: false },
+                { letter: "د", text: "$-\\frac{3}{2}$", correct: true }
+            ],
+            solution: "توحيد الأساس على 2:<br>$4^{-x} = (2^2)^{-x} = 2^{-2x}$.<br>$8 = 2^3$.<br>بما أن الأساس = الأساس، إذن الأس = الأس:<br>$-2x = 3 \\implies x = -\\frac{3}{2}$.",
+            correctAnswer: "د"
+        },
+        {
+            id: "mcq-7",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب التقييمات (Assessments) - ص 16",
+            converted: false,
+            questionText: "If $13^{n-5} = 1$, what is the value of $n$ ?<br>(إذا كان $13^{n-5} = 1$ ، فما قيمة $n$ ؟)",
+            options: [
+                { letter: "أ", text: "$2$", correct: false },
+                { letter: "ب", text: "$3$", correct: false },
+                { letter: "ج", text: "$4$", correct: false },
+                { letter: "د", text: "$5$", correct: true }
+            ],
+            solution: "بما أن أي عدد غير صفري مرفوع لأس صفر يساوي 1:<br>$13^{n-5} = 13^0 \\implies n - 5 = 0 \\implies n = 5$.",
+            correctAnswer: "د"
+        },
+        {
+            id: "mcq-8",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب المدرسة (School Book) - ص 1 (محول من أكمل)",
+            converted: true,
+            questionText: "إذا كان : $5^{x+1} = 7^{x+1}$ فإن $x = \\dots\\dots$",
+            options: [
+                { letter: "أ", text: "$1$", correct: false },
+                { letter: "ب", text: "$-1$", correct: true },
+                { letter: "ج", text: "$0$", correct: false },
+                { letter: "د", text: "$-\\frac{5}{7}$", correct: false }
+            ],
+            solution: "بما أن الأس = الأس والأساس لا يساوي الأساس ($5 \\ne 7$):<br>إذن يجب أن يكون الأس مساوياً للصفر:<br>$x + 1 = 0 \\implies x = -1$.",
+            correctAnswer: "ب"
+        },
+        {
+            id: "mcq-9",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب المدرسة (School Book) - ص 1 (محول من أكمل)",
+            converted: true,
+            questionText: "إذا كان : $5^{x-3} = 1$ فإن $2^x = \\dots\\dots$",
+            options: [
+                { letter: "أ", text: "$8$", correct: true },
+                { letter: "ب", text: "$6$", correct: false },
+                { letter: "ج", text: "$1$", correct: false },
+                { letter: "د", text: "$16$", correct: false }
+            ],
+            solution: "$5^{x-3} = 1 = 5^0 \\implies x - 3 = 0 \\implies x = 3$.<br>إذن: $2^x = 2^3 = 8$.",
+            correctAnswer: "أ"
+        },
+        {
+            id: "mcq-10",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب المدرسة (School Book) - ص 1 (محول من أكمل)",
+            converted: true,
+            questionText: "إذا كان : $2^a + 2^a + 2^a = 24$ فإن $a = \\dots\\dots$",
+            options: [
+                { letter: "أ", text: "$2$", correct: false },
+                { letter: "ب", text: "$3$", correct: true },
+                { letter: "ج", text: "$4$", correct: false },
+                { letter: "د", text: "$8$", correct: false }
+            ],
+            solution: "الجمع المتكرر يحول إلى ضرب:<br>$3 \\times 2^a = 24$.<br>بالقسمة على 3:<br>$2^a = 8 = 2^3 \\implies a = 3$.",
+            correctAnswer: "ب"
+        },
+
+        // LESSON 3: Quadratic Functions
+        {
+            id: "mcq-11",
+            lesson: 3,
+            lessonName: "الدرس 3: الدالة التربيعية",
+            source: "كتاب المدرسة (School Book) - ص 2",
+            converted: false,
+            questionText: "ما الشكل البياني الذي يمثل الدالة $f$ حيث $f(x) = x^2 - 1$ ؟",
+            options: [
+                { letter: "أ", text: "منحنى رأسه $(0, -4)$ ومفتوح لأعلى", correct: false },
+                { letter: "ب", text: "منحنى رأسه $(-1, 0)$ على محور السينات", correct: false },
+                { letter: "ج", text: "منحنى مفتوح لأعلى رأسه $(0, -1)$ ويمر بالنقطتين $(1, 0), (-1, 0)$", correct: true },
+                { letter: "د", text: "منحنى رأسه $(0, 1)$", correct: false }
+            ],
+            solution: "خصائص منحنى الدالة $f(x) = x^2 - 1$:<br>1) معامل $x^2$ موجب (+1) فالمنحنى مفتوح لأعلى.<br>2) رأس المنحنى هو $(0, -1)$.<br>3) يقطع محور السينات عند $x^2 - 1 = 0 \\implies x = \\pm 1$ أي النقطتين $(1, 0)$ و $(-1, 0)$.<br>وهو ما يطابق تماماً الشكل (ج) في كتاب المدرسة.",
+            correctAnswer: "ج"
+        },
+        {
+            id: "mcq-12",
+            lesson: 3,
+            lessonName: "الدرس 3: الدالة التربيعية",
+            source: "كتاب المدرسة (School Book) - ص 2 (محول من أكمل)",
+            converted: true,
+            questionText: "رأس المنحنى للدالة $f$ حيث $f(x) = (x - 3)^2 + 1$ هو :",
+            options: [
+                { letter: "أ", text: "$(3, 1)$", correct: true },
+                { letter: "ب", text: "$(-3, 1)$", correct: false },
+                { letter: "ج", text: "$(3, -1)$", correct: false },
+                { letter: "د", text: "$(1, 3)$", correct: false }
+            ],
+            solution: "الصورة القياسية لمنحنى الدالة التربيعية هي $f(x) = a(x - h)^2 + k$.<br>حيث نقطة رأس المنحنى هي $(h, k)$.<br>بالمقارنة: $h = 3, k = 1 \\implies$ رأس المنحنى هو $(3, 1)$.",
+            correctAnswer: "أ"
+        },
+        {
+            id: "mcq-13",
+            lesson: 3,
+            lessonName: "الدرس 3: الدالة التربيعية",
+            source: "كتاب المدرسة (School Book) - ص 2 (محول من أكمل)",
+            converted: true,
+            questionText: "الدالة $f$ حيث $f(x) = x^2 + 3x - 4$ تقطع محور الصادات ($y$-axis) في النقطة :",
+            options: [
+                { letter: "أ", text: "$(0, -4)$", correct: true },
+                { letter: "ب", text: "$(-4, 0)$", correct: false },
+                { letter: "ج", text: "$(0, 4)$", correct: false },
+                { letter: "د", text: "$(1, 0)$", correct: false }
+            ],
+            solution: "لإيجاد نقطة التقاطع مع محور الصادات، نضع $x = 0$:<br>$f(0) = (0)^2 + 3(0) - 4 = -4$.<br>إذن نقطة التقاطع هي $(0, -4)$.",
+            correctAnswer: "أ"
+        },
+
+        // LESSON 4: Zeros of Polynomials
+        {
+            id: "mcq-14",
+            lesson: 4,
+            lessonName: "الدرس 4: أصفار الدالة كثيرة الحدود",
+            source: "كتاب المدرسة (School Book) - ص 2",
+            converted: false,
+            questionText: "ما مجموعة الأصفار الحقيقية للدالة $f$ حيث $f(x) = x^2 + 4$ ؟",
+            options: [
+                { letter: "أ", text: "$\\{-2\\}$", correct: false },
+                { letter: "ب", text: "$\\{2\\}$", correct: false },
+                { letter: "ج", text: "$\\{-2, 2\\}$", correct: false },
+                { letter: "د", text: "$\\emptyset$", correct: true }
+            ],
+            solution: "نضع $f(x) = 0 \\implies x^2 + 4 = 0 \\implies x^2 = -4$.<br>وحيث إنه لا يوجد عدد حقيقي مربعه سالب ($x \\notin \\mathbb{R}$)، فإن مجموعة الأصفار الحقيقية هي $\\emptyset$.",
+            correctAnswer: "د"
+        },
+
+        // LESSON 5: Rational Functions
+        {
+            id: "mcq-15",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب المدرسة (School Book) - ص 2",
+            converted: false,
+            questionText: "ما مجال الدالة $f$ حيث $f(x) = \\frac{x^2 - 3x}{x^2 - 4x + 3}$ ؟",
+            options: [
+                { letter: "أ", text: "$\\mathbb{R}$", correct: false },
+                { letter: "ب", text: "$\\mathbb{R} - \\{0, 1, 3\\}$", correct: false },
+                { letter: "ج", text: "$\\mathbb{R} - \\{1, 3\\}$", correct: true },
+                { letter: "د", text: "$\\mathbb{R} - \\{0, 3\\}$", correct: false }
+            ],
+            solution: "مجال الدالة الكسرية = $\\mathbb{R} - $ مجموعة أصفار المقام.<br>أصفار المقام: $x^2 - 4x + 3 = 0 \\implies (x - 1)(x - 3) = 0 \\implies x = 1$ أو $x = 3$.<br>إذن المجال هو $\\mathbb{R} - \\{1, 3\\}$.",
+            correctAnswer: "ج"
+        },
+        {
+            id: "mcq-16",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب التقييمات (Assessments) - ص 16",
+            converted: false,
+            questionText: "If the rational function $n(x) = \\frac{x - 2}{x^2 - 9}$, then the domain of the function is :<br>(إذا كانت الدالة الكسرية $n(x) = \\frac{x - 2}{x^2 - 9}$ ، فإن مجال الدالة هو :)",
+            options: [
+                { letter: "أ", text: "$\\mathbb{R} - \\{2\\}$", correct: false },
+                { letter: "ب", text: "$\\mathbb{R} - \\{3, -3\\}$", correct: true },
+                { letter: "ج", text: "$\\mathbb{R} - \\{3, -3, 2\\}$", correct: false },
+                { letter: "د", text: "$\\mathbb{R}$", correct: false }
+            ],
+            solution: "أصفار المقام: $x^2 - 9 = 0 \\implies x^2 = 9 \\implies x = \\pm 3$.<br>مجال الدالة الكسرية هو $\\mathbb{R} - \\{3, -3\\}$.",
+            correctAnswer: "ب"
+        },
+        {
+            id: "mcq-17",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب المدرسة (School Book) - ص 2 (محول من أكمل)",
+            converted: true,
+            questionText: "المجال المشترك للدالتين $f_1, f_2$ حيث $f_1(x) = \\frac{x - 7}{x + 1}$ و $f_2(x) = \\frac{x + 3}{x(x - 7)}$ هو :",
+            options: [
+                { letter: "أ", text: "$\\mathbb{R} - \\{-1, 0, 7\\}$", correct: true },
+                { letter: "ب", text: "$\\mathbb{R} - \\{1, 0, 7\\}$", correct: false },
+                { letter: "ج", text: "$\\mathbb{R} - \\{-1, 7\\}$", correct: false },
+                { letter: "د", text: "$\\mathbb{R} - \\{-3, 7\\}$", correct: false }
+            ],
+            solution: "أصفار مقام $f_1$: $x + 1 = 0 \\implies x = -1$.<br>أصفار مقام $f_2$: $x(x - 7) = 0 \\implies x = 0$ أو $x = 7$.<br>المجال المشترك هو $\\mathbb{R} - $ اتحاد أصفار المقامات $= \\mathbb{R} - \\{-1, 0, 7\\}$.",
+            correctAnswer: "أ"
+        },
+        {
+            id: "mcq-18",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب المدرسة (School Book) - ص 2 (محول من أكمل)",
+            converted: true,
+            questionText: "إذا كانت $f(x) = \\frac{x^2 - x - 2}{x^2 + x - 6}$، فإن مجموعة قيم $x$ التي تجعل $f(x) = \\frac{3}{5}$ هي :",
+            options: [
+                { letter: "أ", text: "$\\emptyset$", correct: true },
+                { letter: "ب", text: "$\\{2\\}$", correct: false },
+                { letter: "ج", text: "$\\{-3\\}$", correct: false },
+                { letter: "د", text: "$\\{2, -3\\}$", correct: false }
+            ],
+            solution: "1) مجال الدالة: المقام $x^2 + x - 6 = (x + 3)(x - 2) = 0 \\implies$ المجال هو $\\mathbb{R} - \\{-3, 2\\}$.<br>2) الاختصار: $f(x) = \\frac{(x - 2)(x + 1)}{(x - 2)(x + 3)} = \\frac{x + 1}{x + 3}$.<br>3) بحل المعادلة $\\frac{x + 1}{x + 3} = \\frac{3}{5} \\implies 5x + 5 = 3x + 9 \\implies 2x = 4 \\implies x = 2$.<br>لكن $2 \\notin \\text{Domain}$ (مستبعدة لأنها تجعل المقام الأصلي صفراً).<br>إذن لا توجد أي قيمة حقيقية لـ $x$ ومجموعة الحل هي $\\emptyset$.",
+            correctAnswer: "أ"
+        }
+    ],
+
+    essay: [
+        // LESSON 1: Laws of Exponents
+        {
+            id: "essay-1",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 1",
+            questionText: "Write the expression in simplest form :<br>$$\\frac{(m^5)^5}{(-m^2)^6}$$<br>(اكتب المقدار في أبسط صورة)",
+            solution: "<strong>خطوات الحل:</strong><br>1) في البسط: قوة القوة $(m^5)^5 = m^{5 \\times 5} = m^{25}$.<br>2) في المقام: الأس الزوجي يلغي الإشارة السالبة: $(-m^2)^6 = (-1)^6 \\cdot (m^2)^6 = m^{2 \\times 6} = m^{12}$.<br>3) في القسمة تطرح الأسس:<br>$$\\frac{m^{25}}{m^{12}} = m^{25 - 12} = m^{13}$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> الناتج في أبسط صورة = $m^{13}$</span>"
+        },
+        {
+            id: "essay-2",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 19",
+            questionText: "Find the result of $q^{-6} \\times (q^3)^4$ in simplest form.<br>(أوجد ناتج المقدار في أبسط صورة)",
+            solution: "<strong>خطوات الحل:</strong><br>1) حساب قوة القوة: $(q^3)^4 = q^{3 \\times 4} = q^{12}$.<br>2) ضرب الأساسات المتشابهة تجمع الأسس:<br>$$q^{-6} \\times q^{12} = q^{-6 + 12} = q^6$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> الناتج = $q^6$</span>"
+        },
+        {
+            id: "essay-3",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 14",
+            questionText: "If $5^y = 4$, what is the value of $125^y$ ?<br>(إذا كان $5^y = 4$ ، فما قيمة $125^y$ ؟)",
+            solution: "<strong>خطوات الحل:</strong><br>1) كتابة العدد $125$ في صورة قوى للعدد $5$: $125 = 5^3$.<br>2) إذن: $125^y = (5^3)^y = (5^y)^3$.<br>3) بالتعويض عن $5^y = 4$:<br>$$125^y = (4)^3 = 64$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> القيمة = $64$</span>"
+        },
+        {
+            id: "essay-4",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب المدرسة (School Book) - ص 1 - س 9",
+            questionText: "إذا كان : $2^x = 5$ فأوجد قيمة المقدار : $3 \\times 2^{x+2} - 8^x$",
+            solution: "<strong>خطوات الحل:</strong><br>1) فك الحد الأول: $3 \\times 2^{x+2} = 3 \\times 2^x \\times 2^2 = 3 \\times 2^x \\times 4 = 12 \\times 2^x$.<br>بالتعويض عن $2^x = 5$: $12 \\times 5 = 60$.<br>2) فك الحد الثاني: $8^x = (2^3)^x = (2^x)^3 = (5)^3 = 125$.<br>3) حساب المقدار كاملاً:<br>$$60 - 125 = -65$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> القيمة = $-65$</span>"
+        },
+        {
+            id: "essay-5",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب المدرسة (School Book) - ص 1 - س 10",
+            questionText: "اختصر لأبسط صورة : $\\frac{4^x \\times 9^{2-x}}{6^{2x}}$ ثم أوجد قيمة الناتج عند $x = 1$.",
+            solution: "<strong>خطوات الحل:</strong><br>1) تحليل الأساسات إلى عواملها الأولية (2 و 3):<br>$$4^x = (2^2)^x = 2^{2x}$$<br>$$9^{2-x} = (3^2)^{2-x} = 3^{4 - 2x}$$<br>$$6^{2x} = (2 \\times 3)^{2x} = 2^{2x} \\times 3^{2x}$$<br>2) التعويض في الكسر:<br>$$\\frac{2^{2x} \\times 3^{4 - 2x}}{2^{2x} \\times 3^{2x}} = \\frac{3^{4 - 2x}}{3^{2x}} = 3^{(4 - 2x) - 2x} = 3^{4 - 4x}$$<br>3) القيمة عند $x = 1$:<br>$$3^{4 - 4(1)} = 3^0 = 1$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> في أبسط صورة = $3^{4-4x}$ ، وعند $x = 1$ الناتج = $1$</span>"
+        },
+        {
+            id: "essay-6",
+            lesson: 1,
+            lessonName: "الدرس 1: قوانين الأسس وقوى القوى",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 7",
+            questionText: "Find the value of the expression $\\frac{11 \\times 6^x \\times (11)^{x-3}}{66^x}$ when $x = 2$.<br>(أوجد قيمة المقدار عندما $x = 2$)",
+            solution: "<strong>خطوات الحل:</strong><br>1) فك المقام: $66^x = (6 \\times 11)^x = 6^x \\times 11^x$.<br>2) تجميع قوى 11 في البسط: $11^1 \\times 11^{x-3} = 11^{1 + x - 3} = 11^{x-2}$.<br>3) بالقسمة:<br>$$\\frac{6^x \\times 11^{x-2}}{6^x \\times 11^x} = 11^{(x-2) - x} = 11^{-2} = \\frac{1}{11^2} = \\frac{1}{121}$$<br>نلاحظ أن الناتج ثابت لجميع قيم $x$، وبالتالي عند $x = 2$ تكون القيمة هي $\\frac{1}{121}$.<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> القيمة = $\\frac{1}{121}$</span>"
+        },
+
+        // LESSON 2: Exponential Equations
+        {
+            id: "essay-7",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 2",
+            questionText: "Solve the following equation (for $x \\in \\mathbb{R}$) : $3^{x-1} = 27$<br>(حل المعادلة الآتية في $\\mathbb{R}$)",
+            solution: "<strong>خطوات الحل:</strong><br>1) وضع الطرف الأيمن على الأساس 3: $27 = 3^3$.<br>2) المعادلة تصبح: $3^{x-1} = 3^3$.<br>3) بما أن الأساس = الأساس، إذن الأس = الأس:<br>$$x - 1 = 3 \\implies x = 4$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> مجموعة الحل = $\\{4\\}$</span>"
+        },
+        {
+            id: "essay-8",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 8",
+            questionText: "Solve the following equation (for $x \\in \\mathbb{R}$) : $2^{2x-1} = \\frac{1}{32}$<br>(حل المعادلة الآتية في $\\mathbb{R}$)",
+            solution: "<strong>خطوات الحل:</strong><br>1) تحويل الطرف الأيسر للأساس 2: $\\frac{1}{32} = \\frac{1}{2^5} = 2^{-5}$.<br>2) إذن: $2^{2x-1} = 2^{-5}$.<br>3) بمساواة الأسس:<br>$$2x - 1 = -5 \\implies 2x = -4 \\implies x = -2$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> مجموعة الحل = $\\{-2\\}$</span>"
+        },
+        {
+            id: "essay-9",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 15",
+            questionText: "Solve the following equation (for $x \\in \\mathbb{R}$) : $\\frac{3^x \\times 21^x}{7^x} = 243$<br>(حل المعادلة الآتية في $\\mathbb{R}$)",
+            solution: "<strong>خطوات الحل:</strong><br>1) تبسيط الطرف الأيمن: $21^x = (3 \\times 7)^x = 3^x \\times 7^x$.<br>$$\\frac{3^x \\times 3^x \\times 7^x}{7^x} = 3^{2x}$$<br>2) وضع العدد 243 في صورة قوى العدد 3: $243 = 3^5$.<br>3) إذن: $3^{2x} = 3^5 \\implies 2x = 5 \\implies x = \\frac{5}{2} = 2.5$.<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> مجموعة الحل = $\\{2.5\\}$ أو $\\{\\frac{5}{2}\\}$</span>"
+        },
+        {
+            id: "essay-10",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 20",
+            questionText: "Solve the following equation (for $x \\in \\mathbb{R}$) : $(10)^{2x-1} = \\frac{1}{1000}$<br>(حل المعادلة الآتية في $\\mathbb{R}$)",
+            solution: "<strong>خطوات الحل:</strong><br>1) تحويل الكسر إلى قوى للعدد 10: $\\frac{1}{1000} = 10^{-3}$.<br>2) إذن: $10^{2x-1} = 10^{-3}$.<br>3) بمساواة الأسس:<br>$$2x - 1 = -3 \\implies 2x = -2 \\implies x = -1$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> مجموعة الحل = $\\{-1\\}$</span>"
+        },
+        {
+            id: "essay-11",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب المدرسة (School Book) - ص 1 - س 11",
+            questionText: "أوجد في $\\mathbb{R}$ مجموعة حل المعادلة : $5^{x^2 - 4} = 125$",
+            solution: "<strong>خطوات الحل:</strong><br>1) تحويل العدد 125 إلى قوى للعدد 5: $125 = 5^3$.<br>2) إذن: $5^{x^2 - 4} = 5^3$.<br>3) بمساواة الأسس:<br>$$x^2 - 4 = 3 \\implies x^2 = 7 \\implies x = \\pm\\sqrt{7}$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> مجموعة الحل S.S. = $\\{\\sqrt{7}, -\\sqrt{7}\\}$</span>"
+        },
+        {
+            id: "essay-12",
+            lesson: 2,
+            lessonName: "الدرس 2: المعادلات الأسية",
+            source: "كتاب المدرسة (School Book) - ص 1 - س 12",
+            questionText: "أوجد قيمة $m$ إذا كان : $3^{-2m+1} \\times 9^{2m} = \\frac{1}{27}$",
+            solution: "<strong>خطوات الحل:</strong><br>1) تبسيط الطرف الأيمن: $9^{2m} = (3^2)^{2m} = 3^{4m}$.<br>الطرف الأيمن $= 3^{-2m+1} \\times 3^{4m} = 3^{-2m+1+4m} = 3^{2m+1}$.<br>2) الطرف الأيسر: $\\frac{1}{27} = \\frac{1}{3^3} = 3^{-3}$.<br>3) إذن: $3^{2m+1} = 3^{-3} \\implies 2m + 1 = -3 \\implies 2m = -4 \\implies m = -2$.<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> قيمة $m = -2$</span>"
+        },
+
+        // LESSON 3: Quadratic Functions
+        {
+            id: "essay-13",
+            lesson: 3,
+            lessonName: "الدرس 3: الدالة التربيعية",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 3",
+            questionText: "Find the minimum value of the function $f(x) = x^2 - 3x - 4$.<br>(أوجد القيمة الصغرى للدالة)",
+            solution: "<strong>خطوات الحل:</strong><br>1) معاملات الدالة: $a = 1, b = -3, c = -4$.<br>2) الإحداثي السيني لنقطة رأس المنحنى:<br>$$x_v = -\\frac{b}{2a} = -\\frac{-3}{2(1)} = \\frac{3}{2} = 1.5$$<br>3) القيمة الصغرى هي $f(1.5)$:<br>$$f(1.5) = (1.5)^2 - 3(1.5) - 4 = 2.25 - 4.5 - 4 = -6.25 = -\\frac{25}{4}$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> القيمة الصغرى = $-6.25$ أو $-\\frac{25}{4}$</span>"
+        },
+        {
+            id: "essay-14",
+            lesson: 3,
+            lessonName: "الدرس 3: الدالة التربيعية",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 9",
+            questionText: "If $(m, n)$ is the vertex of the curve for the function $f$ where $f(x) = x^2 - 2x - 2$, what is the value of $n$ ?<br>(إذا كانت $(m, n)$ رأس منحنى الدالة، فما قيمة $n$ ؟)",
+            solution: "<strong>خطوات الحل:</strong><br>1) الإحداثي السيني للرأس $m$:<br>$$m = -\\frac{b}{2a} = -\\frac{-2}{2(1)} = 1$$<br>2) الإحداثي الصادي للرأس $n = f(m) = f(1)$:<br>$$n = (1)^2 - 2(1) - 2 = 1 - 2 - 2 = -3$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> قيمة $n = -3$</span>"
+        },
+        {
+            id: "essay-15",
+            lesson: 3,
+            lessonName: "الدرس 3: الدالة التربيعية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 16",
+            questionText: "If $-4$ is the $x$-coordinate of the vertex of the curve for the function $f$, where $f(x) = ax^2 + 16x + 7$, what is the value of $a$ ?<br>(إذا كان $-4$ هو الإحداثي السيني لرأس المنحنى للدالة، فما قيمة $a$ ؟)",
+            solution: "<strong>خطوات الحل:</strong><br>1) الإحداثي السيني لرأس المنحنى يعطى بالقانون: $x_v = -\\frac{b}{2a}$.<br>2) لدينا $b = 16$ و $x_v = -4$:<br>$$-4 = -\\frac{16}{2a} = -\\frac{8}{a}$$<br>3) بالضرب التبادلي:<br>$$-4a = -8 \\implies a = \\frac{-8}{-4} = 2$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> قيمة $a = 2$</span>"
+        },
+        {
+            id: "essay-16",
+            lesson: 3,
+            lessonName: "الدرس 3: الدالة التربيعية",
+            source: "كتاب المدرسة (School Book) - ص 2 - س 12",
+            questionText: "مثل بيانياً الدالة $f$ حيث $f(x) = (x - 1)^2 + 3$ موضحاً على الرسم محور التماثل وأوجد القيمة العظمى أو الصغرى للدالة.",
+            solution: "<strong>خطوات الحل والتمثيل البياني:</strong><br>1) رأس المنحنى من الصيغة المباشرة هو $(1, 3)$.<br>2) معادلة محور التماثل هي: $x = 1$.<br>3) بما أن معامل القوس موجب، فالمنحنى مفتوح لأعلى وللدالة <strong>قيمة صغرى تساوي 3</strong>.<br>4) جدول النقاط المساعدة:<br><table style=\"width:100%; max-width:400px; margin:10px 0; border-collapse:collapse; text-align:center;\" border=\"1\"><tr><th>$x$</th><td>$-1$</td><td>$0$</td><td>$1$</td><td>$2$</td><td>$3$</td></tr><tr><th>$f(x)$</th><td>$7$</td><td>$4$</td><td>$3$</td><td>$4$</td><td>$7$</td></tr></table><div class=\"graph-preview-container\"><svg class=\"graph-svg\" viewBox=\"-80 -20 320 240\" width=\"300\" height=\"220\"><line x1=\"-60\" y1=\"180\" x2=\"220\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"80\" y1=\"10\" x2=\"80\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"210\" stroke=\"#f59e0b\" stroke-dasharray=\"4\" stroke-width=\"2\"/><text x=\"115\" y=\"30\" fill=\"#f59e0b\" font-size=\"12\" font-weight=\"bold\">x = 1</text><path d=\"M 50 60 Q 110 240 170 60\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/><circle cx=\"110\" cy=\"150\" r=\"5\" fill=\"#10b981\"/><text x=\"120\" y=\"155\" fill=\"#34d399\" font-size=\"12\" font-weight=\"bold\">(1, 3)</text></svg></div><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> رأس المنحنى $(1, 3)$ | محور التماثل $x = 1$ | القيمة الصغرى = $3$</span>"
+        },
+        {
+            id: "essay-17",
+            lesson: 3,
+            lessonName: "الدرس 3: الدالة التربيعية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 21",
+            questionText: "Graph the function $f(x) = x^2 - 7x + 12$, and find the maximum or minimum value of the function.<br>(ارسم منحنى الدالة، وأوجد القيمة العظمى أو الصغرى للدالة)",
+            solution: "<strong>خطوات الحل:</strong><br>1) رأس المنحنى: $x_v = -\\frac{b}{2a} = -\\frac{-7}{2(1)} = 3.5$.<br>2) قيمة الدالة عند الرأس:<br>$$f(3.5) = (3.5)^2 - 7(3.5) + 12 = 12.25 - 24.5 + 12 = -0.25 = -\\frac{1}{4}$$<br>3) بما أن معامل $x^2$ موجب، فللدالة <strong>قيمة صغرى = $-0.25$</strong>.<br>4) نقاط التقاطع مع محور السينات: $x^2 - 7x + 12 = (x - 3)(x - 4) = 0 \\implies x = 3, 4$.<br>جدول النقاط: $(1, 6), (2, 2), (3, 0), (3.5, -0.25), (4, 0), (5, 2), (6, 6)$.<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> رأس المنحنى $(3.5, -0.25)$ | القيمة الصغرى = $-0.25$</span>"
+        },
+
+        // LESSON 4: Zeros of Polynomials
+        {
+            id: "essay-18",
+            lesson: 4,
+            lessonName: "الدرس 4: أصفار الدالة كثيرة الحدود",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 4",
+            questionText: "Find the set of real zeros for the function : $m(x) = x^2 + 1$<br>(أوجد مجموعة الأصفار الحقيقية للدالة)",
+            solution: "<strong>خطوات الحل:</strong><br>نضع $m(x) = 0$:<br>$$x^2 + 1 = 0 \\implies x^2 = -1$$<br>لا يوجد أي عدد حقيقي مربعه عدد سالب ($x^2 \\ge 0$ دائماً في $\\mathbb{R}$).<br>إذن مجموعة الأصفار الحقيقية هي المجموعة الخالية.<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> $Z(m) = \\emptyset$</span>"
+        },
+        {
+            id: "essay-19",
+            lesson: 4,
+            lessonName: "الدرس 4: أصفار الدالة كثيرة الحدود",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 10",
+            questionText: "Find the set of real zeros of the following function : $q(x) = -10x - 5$<br>(أوجد مجموعة الأصفار الحقيقية للدالة)",
+            solution: "<strong>خطوات الحل:</strong><br>نضع $q(x) = 0$:<br>$$-10x - 5 = 0 \\implies -10x = 5 \\implies x = -\\frac{5}{10} = -\\frac{1}{2}$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> $Z(q) = \\{-\\frac{1}{2}\\}$</span>"
+        },
+        {
+            id: "essay-20",
+            lesson: 4,
+            lessonName: "الدرس 4: أصفار الدالة كثيرة الحدود",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 17",
+            questionText: "Find the set of real zeros of the following function : $f(x) = x^2 - 5x - 24$<br>(أوجد مجموعة الأصفار الحقيقية للدالة)",
+            solution: "<strong>خطوات الحل:</strong><br>نضع $f(x) = 0$ ونحلل المقدار الثلاثي:<br>$$x^2 - 5x - 24 = 0 \\implies (x - 8)(x + 3) = 0$$<br>إذن: $x - 8 = 0 \\implies x = 8$ ، أو $x + 3 = 0 \\implies x = -3$.<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> $Z(f) = \\{8, -3\\}$</span>"
+        },
+        {
+            id: "essay-21",
+            lesson: 4,
+            lessonName: "الدرس 4: أصفار الدالة كثيرة الحدود",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 22",
+            questionText: "If $-3$ is one of the zeros of the function $f(x) = x^2 + bx - 14$, what is the value of $b$ ?<br>(إذا كان $-3$ أحد أصفار الدالة، فما قيمة $b$ ؟)",
+            solution: "<strong>خطوات الحل:</strong><br>بما أن $-3$ أحد أصفار الدالة، إذن $f(-3) = 0$:<br>$$(-3)^2 + b(-3) - 14 = 0$$<br>$$9 - 3b - 14 = 0$$<br>$$-3b - 5 = 0 \\implies -3b = 5 \\implies b = -\\frac{5}{3}$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> قيمة $b = -\\frac{5}{3}$</span>"
+        },
+
+        // LESSON 5: Rational Functions
+        {
+            id: "essay-22",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 5",
+            questionText: "Find the set of values of $x$ for which the following rational function is undefined :<br>$$n(x) = \\frac{x - 3}{x^2 - 5x + 6}$$<br>(أوجد مجموعة قيم $x$ التي تجعل الدالة الكسرية غير معرفة)",
+            solution: "<strong>خطوات الحل:</strong><br>تكون الدالة الكسرية غير معرفة عندما يكون المقام مساوياً للصفر:<br>$$x^2 - 5x + 6 = 0$$<br>بتحليل المقدار الثلاثي:<br>$$(x - 2)(x - 3) = 0 \\implies x = 2 \\text{ أو } x = 3$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> مجموعة قيم $x$ = $\\{2, 3\\}$</span>"
+        },
+        {
+            id: "essay-23",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب التقييمات (Assessments) - ص 16 - س 6",
+            questionText: "Determine the domain of the rational function $n(x) = \\frac{x^2 - 25}{x - 5}$. Then find, if possible, $n(5)$ and $n(-5)$.<br>(عين مجال الدالة الكسرية ثم أوجد إن أمكن كلاً من $n(5)$ و $n(-5)$)",
+            solution: "<strong>خطوات الحل:</strong><br>1) أصفار المقام: $x - 5 = 0 \\implies x = 5$.<br>مجال الدالة هو $\\mathbb{R} - \\{5\\}$.<br>2) قيمة $n(5)$:<br>بما أن $5 \\notin \\text{Domain}$، فإن $n(5)$ <strong>غير معرفة (undefined)</strong>.<br>3) قيمة $n(-5)$:<br>بالتعويض المباشر:<br>$$n(-5) = \\frac{(-5)^2 - 25}{-5 - 5} = \\frac{25 - 25}{-10} = \\frac{0}{-10} = 0$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> المجال = $\\mathbb{R} - \\{5\\}$ | $n(5)$ غير معرفة | $n(-5) = 0$</span>"
+        },
+        {
+            id: "essay-24",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 11",
+            questionText: "Write the function $n(x) = \\frac{x^2 + 2x - 15}{x^2 - 5x + 6}$ in its simplest form, and state its domain.<br>(اكتب الدالة في أبسط صورة وعين مجالها)",
+            solution: "<strong>خطوات الحل:</strong><br>1) تحليل البسط والمقام:<br>البسط: $x^2 + 2x - 15 = (x + 5)(x - 3)$<br>المقام: $x^2 - 5x + 6 = (x - 2)(x - 3)$<br>2) إيجاد المجال قبل الاختصار:<br>أصفار المقام هي $\\{2, 3\\} \\implies$ المجال = $\\mathbb{R} - \\{2, 3\\}$.<br>3) الاختصار بحذف العامل المشترك $(x - 3)$:<br>$$n(x) = \\frac{(x + 5)(x - 3)}{(x - 2)(x - 3)} = \\frac{x + 5}{x - 2}$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> $n(x) = \\frac{x+5}{x-2}$ والمجال هو $\\mathbb{R} - \\{2, 3\\}$</span>"
+        },
+        {
+            id: "essay-25",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 12",
+            questionText: "Find the common domain of the two functions :<br>$$f(x) = \\frac{3}{x^2 - x - 6} \\quad , \\quad g(x) = \\frac{x - 1}{x^2 - 4}$$<br>(أوجد المجال المشترك للدالتين)",
+            solution: "<strong>خطوات الحل:</strong><br>1) أصفار مقام الدالة $f(x)$:<br>$$x^2 - x - 6 = 0 \\implies (x - 3)(x + 2) = 0 \\implies x = 3 , -2$$<br>2) أصفار مقام الدالة $g(x)$:<br>$$x^2 - 4 = 0 \\implies (x - 2)(x + 2) = 0 \\implies x = 2 , -2$$<br>3) اتحاد أصفار المقامات = $\\{-2, 2, 3\\}$.<br>إذن المجال المشترك للدالتين هو $\\mathbb{R} - \\{-2, 2, 3\\}$.<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> المجال المشترك = $\\mathbb{R} - \\{-2, 2, 3\\}$</span>"
+        },
+        {
+            id: "essay-26",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 18",
+            questionText: "If the common domain of the two functions $f_1(x) = \\frac{3}{x - k}$ and $f_2(x) = \\frac{x}{x + 5}$ is $\\mathbb{R} - \\{-5, 3\\}$, find the value of $k$ ?<br>(إذا كان المجال المشترك للدالتين هو $\\mathbb{R} - \\{-5, 3\\}$ ، فأوجد قيمة $k$)",
+            solution: "<strong>خطوات الحل:</strong><br>1) أصفار مقام $f_2(x)$ هي: $x + 5 = 0 \\implies x = -5$.<br>2) بما أن المجال المشترك هو $\\mathbb{R} - \\{-5, 3\\}$، فإن صفر مقام $f_1(x)$ يجب أن يكون $3$.<br>3) إذن عند $x = 3$ يكون المقام مساوياً للصفر:<br>$$3 - k = 0 \\implies k = 3$$<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> قيمة $k = 3$</span>"
+        },
+        {
+            id: "essay-27",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب المدرسة (School Book) - ص 2 - س 9",
+            questionText: "إذا كانت : $f_1(x) = \\frac{x^2}{x^3 - x^2}$ و $f_2(x) = \\frac{x^3 + x^2 + x}{x^4 - x}$، فأثبت أن : $f_1 = f_2$.",
+            solution: "<strong>خطوات الإثبات النموذجية:</strong><br>لكي يتساوى كسران جبريان $f_1 = f_2$ يجب تحقق شرطين: (مجال $f_1$ = مجال $f_2$) و ($f_1(x) = f_2(x)$ بعد الاختصار).<br><br><strong>أولاً: الدالة $f_1(x)$:</strong><br>$$f_1(x) = \\frac{x^2}{x^2(x - 1)}$$<br>أصفار المقام: $x^2 = 0 \\implies x = 0$ ، $x - 1 = 0 \\implies x = 1$.<br>مجال $f_1 = \\mathbb{R} - \\{0, 1\\}$.<br>بالاختصار: $f_1(x) = \\frac{1}{x - 1}$.<br><br><strong>ثانياً: الدالة $f_2(x)$:</strong><br>البسط: بأخذ $x$ عامل مشترك: $x(x^2 + x + 1)$.<br>المقام: بأخذ $x$ عامل مشترك: $x(x^3 - 1) = x(x - 1)(x^2 + x + 1)$.<br>أصفار المقام: $x = 0, 1$ (المقدار $x^2 + x + 1$ لا يحلل في $\\mathbb{R}$ وليس له أصفار حقيقية).<br>مجال $f_2 = \\mathbb{R} - \\{0, 1\\}$.<br>بالاختصار: بحذف $x(x^2 + x + 1)$ من البسط والمقام:<br>$$f_2(x) = \\frac{1}{x - 1}$$<br><strong>الاستنتاج:</strong> بما أن مجال $f_1$ = مجال $f_2 = \\mathbb{R} - \\{0, 1\\}$، و $f_1(x) = f_2(x) = \\frac{1}{x - 1}$ لكل $x$ في المجال، إذن $f_1 = f_2$ (وهو المطلوب إثباته).<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> تم إثبات تساوي الكسرين جبرياً بنجاح</span>"
+        },
+        {
+            id: "essay-28",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 13",
+            questionText: "If $f_1(x) = \\frac{x^2 - 4}{x^2 - 2x}$ and $f_2(x) = \\frac{x + 2}{x}$, prove that $f_1 = f_2$ for all $x$ in their common domain.<br>(أثبت أن $f_1 = f_2$ لجميع قيم $x$ في مجالهما المشترك)",
+            solution: "<strong>خطوات الحل:</strong><br>1) تبسيط $f_1(x)$:<br>$$f_1(x) = \\frac{(x - 2)(x + 2)}{x(x - 2)}$$<br>أصفار المقام: $x = 0, 2 \\implies$ مجال $f_1 = \\mathbb{R} - \\{0, 2\\}$.<br>بالاختصار: $f_1(x) = \\frac{x + 2}{x}$.<br>2) الدالة $f_2(x) = \\frac{x + 2}{x}$ هي في أبسط صورة، ومجالها $\\mathbb{R} - \\{0\\}$.<br>3) المجال المشترك هو $\\mathbb{R} - \\{0, 2\\}$.<br>لكل $x \\in \\mathbb{R} - \\{0, 2\\}$ نجد أن $f_1(x) = f_2(x) = \\frac{x + 2}{x}$.<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> تم إثبات التساوي في المجال المشترك $\\mathbb{R} - \\{0, 2\\}$</span>"
+        },
+        {
+            id: "essay-29",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 23",
+            questionText: "Are the two functions $f_1(x) = \\frac{x^2}{x^3 - x^2}$ and $f_2(x) = \\frac{x^2 + x + 1}{x^3 - 1}$ equivalent fractions ? Explain.<br>(هل الدالتان تمثلان كسرين متكافئين؟ وضح ذلك)",
+            solution: "<strong>خطوات الحل والتوضيح:</strong><br>1) تبسيط $f_1(x)$:<br>$$f_1(x) = \\frac{x^2}{x^2(x - 1)} = \\frac{1}{x - 1} \\quad , \\quad \\text{Domain}(f_1) = \\mathbb{R} - \\{0, 1\\}$$<br>2) تبسيط $f_2(x)$:<br>$$f_2(x) = \\frac{x^2 + x + 1}{(x - 1)(x^2 + x + 1)} = \\frac{1}{x - 1} \\quad , \\quad \\text{Domain}(f_2) = \\mathbb{R} - \\{1\\}$$<br>3) نلاحظ أن كلا الكسرين يختصر إلى نفس الصورة $\\frac{1}{x - 1}$.<br>إذن: نعم، الكسران متكافئان لجميع قيم $x$ في مجالهما المشترك وهو $\\mathbb{R} - \\{0, 1\\}$.<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> نعم، متكافئان في المجال المشترك $\\mathbb{R} - \\{0, 1\\}$</span>"
+        },
+        {
+            id: "essay-30",
+            lesson: 5,
+            lessonName: "الدرس 5: دوال الكسور الجبرية",
+            source: "كتاب التقييمات (Assessments) - ص 17 - س 24",
+            questionText: "If $f_1(x) = \\frac{x}{x^2 - 2x}$ and $f_2(x) = \\frac{x^2 + 2x + 4}{x^3 - 8}$, prove that $f_1(x) = f_2(x)$ for every $x$ in their common domain, then determine this domain.<br>(أثبت أن $f_1(x) = f_2(x)$ لكل $x$ في مجالهما المشترك ثم عين هذا المجال)",
+            solution: "<strong>خطوات الحل والإثبات:</strong><br>1) الدالة الأولى $f_1(x)$:<br>$$f_1(x) = \\frac{x}{x(x - 2)}$$<br>أصفار المقام: $x = 0, 2 \\implies$ مجال $f_1 = \\mathbb{R} - \\{0, 2\\}$.<br>بالاختصار: $f_1(x) = \\frac{1}{x - 2}$.<br><br>2) الدالة الثانية $f_2(x)$:<br>$$f_2(x) = \\frac{x^2 + 2x + 4}{(x - 2)(x^2 + 2x + 4)}$$<br>أصفار المقام: $x - 2 = 0 \\implies x = 2$ (المقدار $x^2 + 2x + 4$ ليس له أصفار حقيقية).<br>مجال $f_2 = \\mathbb{R} - \\{2\\}$.<br>بالاختصار: $f_2(x) = \\frac{1}{x - 2}$.<br><br>3) تعيين المجال المشترك:<br>المجال المشترك هو اتحاد أصفار المقامات مستبعدة من $\\mathbb{R}$ = $\\mathbb{R} - \\{0, 2\\}$.<br>ولكل $x \\in \\mathbb{R} - \\{0, 2\\}$ نجد أن $f_1(x) = f_2(x) = \\frac{1}{x - 2}$. (وهو المطلوب إثباته).<br><span class=\"final-answer-pill\"><i class=\"fa-solid fa-check\"></i> المجال المشترك هو $\\mathbb{R} - \\{0, 2\\}$ وتم إثبات التساوي</span>"
+        }
+    ]
+};
+
+// Global State
+let currentMode = 'all'; // 'all', 'mcq', 'essay'
+let currentLesson = 'all'; // 'all', '1', '2', '3', '4', '5'
+const userSelections = {}; // id -> selected option index
+
+// Render Function
+function renderQuestions() {
+    const container = document.getElementById('questionsContainer');
+    container.innerHTML = '';
+
+    const showMcq = currentMode === 'all' || currentMode === 'mcq';
+    const showEssay = currentMode === 'all' || currentMode === 'essay';
+
+    // Filter MCQ by lesson
+    const filteredMcq = REVISION_DATA.mcq.filter(q => {
+        if (currentLesson === 'all') return true;
+        return q.lesson.toString() === currentLesson;
+    });
+
+    // Filter Essay by lesson
+    const filteredEssay = REVISION_DATA.essay.filter(q => {
+        if (currentLesson === 'all') return true;
+        return q.lesson.toString() === currentLesson;
+    });
+
+    // Render Section 1: MCQ
+    if (showMcq && filteredMcq.length > 0) {
+        const mcqSection = document.createElement('section');
+        mcqSection.innerHTML = `
+            <div class="section-header">
+                <div class="section-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <h2 class="section-title">أولاً: أسئلة الاختيار من متعدد (Multiple Choice Questions)</h2>
+                <span class="section-count">${filteredMcq.length} أسئلة</span>
+            </div>
+            <div class="questions-list" id="mcqList"></div>
+        `;
+        container.appendChild(mcqSection);
+
+        const listEl = mcqSection.querySelector('#mcqList');
+        filteredMcq.forEach((q, index) => {
+            const card = createMcqCard(q, index + 1);
+            listEl.appendChild(card);
+        });
+    }
+
+    // Render Section 2: Essay
+    if (showEssay && filteredEssay.length > 0) {
+        const essaySection = document.createElement('section');
+        essaySection.innerHTML = `
+            <div class="section-header" style="margin-top: 50px;">
+                <div class="section-icon" style="background: linear-gradient(135deg, #f59e0b, #ef4444);"><i class="fa-solid fa-pen-ruler"></i></div>
+                <h2 class="section-title">ثانياً: الأسئلة المقالية وحل المشكلات (Essay & Problems)</h2>
+                <span class="section-count">${filteredEssay.length} مسألة</span>
+            </div>
+            <div class="questions-list" id="essayList"></div>
+        `;
+        container.appendChild(essaySection);
+
+        const listEl = essaySection.querySelector('#essayList');
+        filteredEssay.forEach((q, index) => {
+            const card = createEssayCard(q, index + 1);
+            listEl.appendChild(card);
+        });
+    }
+
+    // Re-render KaTeX math formulas
+    if (window.renderMathInElement) {
+        renderMathInElement(container, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
+        });
+    }
+}
+
+function createMcqCard(q, displayNum) {
+    const card = document.createElement('article');
+    card.className = `q-card ${q.converted ? 'converted-from-complete' : ''}`;
+    card.id = `card-${q.id}`;
+
+    const sourceClass = q.source.includes('كتاب المدرسة') ? 'school' : 'assessment';
+
+    card.innerHTML = `
+        <div class="q-header">
+            <div class="q-meta-tags">
+                <div class="q-num-badge">${displayNum}</div>
+                <span class="q-source-tag ${sourceClass}"><i class="fa-solid fa-book"></i> ${q.source}</span>
+                ${q.converted ? '<span class="q-source-tag converted"><i class="fa-solid fa-shuffle"></i> تم تحويله من أكمل إلى اختر</span>' : ''}
+            </div>
+            <span class="q-lesson-tag"><i class="fa-solid fa-tag"></i> ${q.lessonName}</span>
+        </div>
+        <div class="q-body">${q.questionText}</div>
+        <div class="options-grid" id="options-${q.id}">
+            ${q.options.map((opt, optIdx) => `
+                <button class="opt-btn" onclick="selectOption('${q.id}', ${optIdx})">
+                    <span class="opt-letter">(${opt.letter})</span>
+                    <span class="opt-text">${opt.text}</span>
+                </button>
+            `).join('')}
+        </div>
+        <div class="solution-box">
+            <button class="solution-toggle-btn" onclick="toggleSolution('${q.id}')">
+                <span><i class="fa-solid fa-lightbulb"></i> عرض خطوات الحل النموذجية وتفسير الإجابة</span>
+                <i class="fa-solid fa-chevron-down" id="icon-${q.id}"></i>
+            </button>
+            <div class="solution-content" id="sol-${q.id}">
+                <div class="step-pill"><i class="fa-solid fa-calculator"></i> خطوات التبسيط والحل:</div>
+                <p>${q.solution}</p>
+                <div class="final-answer-pill">
+                    <i class="fa-solid fa-circle-check"></i> الاختيار الصحيح هو: (${q.correctAnswer})
+                </div>
+            </div>
+        </div>
+    `;
+
+    return card;
+}
+
+function createEssayCard(q, displayNum) {
+    const card = document.createElement('article');
+    card.className = 'q-card';
+    card.id = `card-${q.id}`;
+
+    const sourceClass = q.source.includes('كتاب المدرسة') ? 'school' : 'assessment';
+
+    card.innerHTML = `
+        <div class="q-header">
+            <div class="q-meta-tags">
+                <div class="q-num-badge" style="background: linear-gradient(135deg, #f59e0b, #ea580c);">${displayNum}</div>
+                <span class="q-source-tag ${sourceClass}"><i class="fa-solid fa-book"></i> ${q.source}</span>
+            </div>
+            <span class="q-lesson-tag"><i class="fa-solid fa-tag"></i> ${q.lessonName}</span>
+        </div>
+        <div class="q-body">${q.questionText}</div>
+        <div class="solution-box">
+            <button class="solution-toggle-btn" onclick="toggleSolution('${q.id}')">
+                <span><i class="fa-solid fa-pen-nib"></i> عرض خطوات الإجابة والحل بالتفصيل</span>
+                <i class="fa-solid fa-chevron-down" id="icon-${q.id}"></i>
+            </button>
+            <div class="solution-content" id="sol-${q.id}">
+                ${q.solution}
+            </div>
+        </div>
+    `;
+
+    return card;
+}
+
+// User Interaction
+function selectOption(qId, optIdx) {
+    const question = REVISION_DATA.mcq.find(q => q.id === qId);
+    if (!question) return;
+
+    userSelections[qId] = optIdx;
+    updateSolvedCount();
+
+    const container = document.getElementById(`options-${qId}`);
+    const buttons = container.querySelectorAll('.opt-btn');
+
+    buttons.forEach((btn, idx) => {
+        btn.classList.remove('selected-correct', 'selected-wrong', 'highlight-correct');
+        const opt = question.options[idx];
+
+        if (idx === optIdx) {
+            if (opt.correct) {
+                btn.classList.add('selected-correct');
+            } else {
+                btn.classList.add('selected-wrong');
+            }
+        } else if (opt.correct) {
+            btn.classList.add('highlight-correct');
+        }
+    });
+
+    // Auto open solution to learn why
+    const solContent = document.getElementById(`sol-${qId}`);
+    const icon = document.getElementById(`icon-${qId}`);
+    if (solContent && !solContent.classList.contains('open')) {
+        solContent.classList.add('open');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+    }
+}
+
+function toggleSolution(id) {
+    const solContent = document.getElementById(`sol-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+    if (!solContent) return;
+
+    if (solContent.classList.contains('open')) {
+        solContent.classList.remove('open');
+        if (icon) icon.style.transform = 'rotate(0deg)';
+    } else {
+        solContent.classList.add('open');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+    }
+}
+
+function expandAllSolutions() {
+    document.querySelectorAll('.solution-content').forEach(el => el.classList.add('open'));
+    document.querySelectorAll('.solution-toggle-btn i.fa-chevron-down').forEach(el => el.style.transform = 'rotate(180deg)');
+}
+
+function collapseAllSolutions() {
+    document.querySelectorAll('.solution-content').forEach(el => el.classList.remove('open'));
+    document.querySelectorAll('.solution-toggle-btn i.fa-chevron-down').forEach(el => el.style.transform = 'rotate(0deg)');
+}
+
+function updateSolvedCount() {
+    const count = Object.keys(userSelections).length;
+    const badge = document.getElementById('solvedCount');
+    if (badge) badge.innerText = count;
+}
+
+// Mode & Lesson Filtering
+function setMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('#modeTabs .tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.mode === mode);
+    });
+    renderQuestions();
+}
+
+function setLesson(lesson) {
+    currentLesson = lesson;
+    document.querySelectorAll('#lessonPills .pill-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lesson === lesson);
+    });
+    renderQuestions();
+}
+
+function copyIsolatedLink() {
+    const loc = window.location;
+    let url = loc.origin + loc.pathname;
+    if (!url.includes('?')) {
+        url += '?isolated=true';
+    } else if (!url.includes('isolated=true')) {
+        url += '&isolated=true';
+    }
+    navigator.clipboard.writeText(url).then(() => {
+        const btn = document.getElementById('btnCopyIsolatedLink');
+        if (btn) {
+            const orig = btn.innerHTML;
+            btn.innerHTML = '<i class="fa-solid fa-check" style="color: #10b981;"></i> <span>تم نسخ الرابط المنفصل!</span>';
+            setTimeout(() => { btn.innerHTML = orig; }, 2500);
+        }
+    }).catch(() => {
+        prompt('انسخ الرابط المنفصل:', url);
+    });
+}
+
+// Initialize on DOM load
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const isIsolated = urlParams.get('isolated') === 'true' || 
+                       urlParams.get('standalone') === 'true' || 
+                       urlParams.get('pure') === 'true' || 
+                       urlParams.get('student') === 'true' || 
+                       urlParams.get('only') === 'true';
+
+    if (isIsolated) {
+        document.body.classList.add('isolated-mode');
+    }
+    if (urlParams.get('notabs') === 'true') {
+        document.body.classList.add('no-tabs-mode');
+    }
+
+    renderQuestions();
+});
+</script>
+
+</body>
+</html>

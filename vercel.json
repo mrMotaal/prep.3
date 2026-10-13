@@ -1,0 +1,45 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/assessment",
+      "destination": "/assessment/index.html"
+    },
+    {
+      "source": "/assessment/:path*",
+      "destination": "/assessment/:path*"
+    },
+    {
+      "source": "/place_value",
+      "destination": "/index.html?lesson=place_value&student=true"
+    },
+    {
+      "source": "/similarity",
+      "destination": "/index.html?lesson=similarity&student=true"
+    },
+    {
+      "source": "/quadratic",
+      "destination": "/index.html?lesson=quadratic&student=true"
+    },
+    {
+      "source": "/october",
+      "destination": "/october_revision.html"
+    },
+    {
+      "source": "/october_revision",
+      "destination": "/october_revision.html"
+    },
+    {
+      "source": "/prep3_october",
+      "destination": "/october_revision.html"
+    },
+    {
+      "source": "/proportion",
+      "destination": "/index.html?lesson=proportion&student=true"
+    },
+    {
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
