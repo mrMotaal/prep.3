@@ -6317,7 +6317,7 @@ function updateShareModalForLesson(lessonKey) {
       'proportion': 'Proportion',
       'quadratic': 'Quadratic Function',
       'similarity': 'Similarity of Polygons',
-      'october': 'مراجعة أكتوبر (Prep 3 • 48Q)'
+      'october': 'Prep 3 • October Revision (48Q)'
     };
     badge.textContent = names[currentLesson] || currentLesson;
   }
